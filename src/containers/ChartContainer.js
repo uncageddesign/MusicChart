@@ -35,8 +35,10 @@ class ChartContainer extends React.Component {
           <h1>UK Charts</h1>
           <h3>Powered by iTunes</h3>
         </header>
-        <ChartList songs={this.state.songs} onSongSelected={this.handleSongSelected}/>
+        <div id="content">
+        <ChartList songs={this.state.songs} onSongSelected={this.handleSongSelected} id="info"/>
         <SongDetails song={this.state.selectedSong}/>
+        </div>
       </div>
     );
   }
